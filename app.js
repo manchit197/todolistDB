@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extened: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost:27017/todolistDB", {useNewUrlParser: true,useUnifiedTopology: true,useFindAndModify: false})
+mongoose.connect("mongodb+srv://admin-jeff:test12345678@cluster0.wkbsp.mongodb.net/todolistDB", {useNewUrlParser: true,useUnifiedTopology: true,useFindAndModify: false})
 
 const itemsSchema = {
   name: String
